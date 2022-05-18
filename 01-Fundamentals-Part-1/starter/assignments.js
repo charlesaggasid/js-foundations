@@ -38,3 +38,16 @@ console.log('23' / '2');
 let n= '1' + 1;
 n = n-1;
 console.log(n)
+
+//Truthy and Falsy *************************
+
+//What are 5 falsy values?
+
+// 5 falsy values: 0, ‘’, undefined, null, NaN
+
+// So, falsy values are values that are not exactly false,
+// but will become false when we try to convert them into a boolean.
+
+// Truthy values
+// -any number that is not zero or any string that is not an
+// empty string will be converted to true when we attempt to convert them to a boolean.
