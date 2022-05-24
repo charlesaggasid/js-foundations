@@ -39,15 +39,87 @@ let n= '1' + 1;
 n = n-1;
 console.log(n)
 
+/*
+
 //Truthy and Falsy *************************
 
-//What are 5 falsy values?
+What are 5 falsy values?
 
-// 5 falsy values: 0, ‘’, undefined, null, NaN
+5 falsy values: 0, ‘’, undefined, null, NaN
 
-// So, falsy values are values that are not exactly false,
-// but will become false when we try to convert them into a boolean.
+So, falsy values are values that are not exactly false,
+but will become false when we try to convert them into a boolean.
 
-// Truthy values
-// -any number that is not zero or any string that is not an
-// empty string will be converted to true when we attempt to convert them to a boolean.
+Truthy values
+-any number that is not zero or any string that is not an
+empty string will be converted to true when we attempt to convert them to a boolean.
+
+// Switch Statements *************************
+
+switch (expression) {
+  case value1:
+    //Statements executed when the
+    //result of expression matches value1
+    [break;]
+  case value2:
+    //Statements executed when the
+    //result of expression matches value2
+    [break;]
+  ...
+  case valueN:
+    //Statements executed when the
+    //result of expression matches valueN
+    [break;]
+  [default:
+    //Statements executed when none of
+    //the values match the value of the expression
+    [break;]]
+}
+
+Example-
+
+const day = 'friday';
+
+switch (day) {
+  case 'monday': // day === 'monday'
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('Record videos');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekend :D');
+    break;
+  default:
+    console.log('Not a valid day!');
+}
+
+ABOVE CODE IS SAME AS BELOW-
+
+if (day === 'monday') {
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('Write code examples');
+} else if (day === 'friday') {
+  console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('Enjoy the weekend :D');
+} else {
+  console.log('Not a valid day!');
+}
+
+-END
+
+*/
